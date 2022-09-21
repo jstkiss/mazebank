@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../assets/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Home</title>
+  </head>
+  <body class="bg-customblue">
+    <div class="border-8 rounded p-4 w-60 h-80">
+      <div>
+        <h1 class="text-2xl">Hello<span id="name"></span></h1>
+        <form id="form" class="mt-5">
+          <div>
+            <label for="">Name:</label>
+            <input
+              class="border-2 border-black"
+              type="text"
+              name=""
+              id="name-input"
+              placeholder="your name:"
+            />
+          </div>
+          <div>
+            <label for="">Account:</label>
+            <input
+              class="border-2 border-black"
+              type="text"
+              name=""
+              id="account-input"
+              placeholder="your account:"
+            />
+          </div>
+          <div>
+            <label for="">Rib:</label>
+            <input
+              class="border-2 border-black"
+              type="text"
+              name=""
+              id="rib-input"
+              placeholder="your rib:"
+            />
+          </div>
+          <div>
+            <label for="">Sold:</label>
+            <input
+              class="border-2 border-black"
+              type="number"
+              name=""
+              id="sold-input"
+              placeholder="your sold:"
+            />
+          </div>
+          <div class="pt-2 flex justify-center">
+            <button
+              class="rounded shadow bg-btnbeige text-customblue"
+              id="submit-user"
+            >
+              Envoyer
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <section class="flex justify-center">
+      <div>
+        <div class="text-parablue">
+          <h2>Mon Nom: <span id="name"></span></h2>
+          <br />
+          <h2>N* de compte: <span id="account"></span></h2>
+          <br />
+          <h2>Mon RIB: <span id="rib"></span></h2>
+          <br>
+          <h2>Mon Sold: <span id="sold"></span></h2>
+        </div>
+      </div>
+    </section>
+    <div class="mt-20">
+      <div class="flex justify-center">
+        <div class="p-4 rounded border-solid bg-blue-500">
+          <h2>Deposit</h2>
+          <p>€ <span id="deposit">0</span></p>
+        </div>
+        <div class="p-4 rounded border-solid bg-white">
+          <h2>Withdraw</h2>
+          <p>€ <span id="withdraw">0</span></p>
+        </div>
+        <div class="p-4 rounded border-solid bg-red-500">
+          <h2>Solde</h2>
+          <p>€ <span id="balance">0</span></p>
+        </div>
+      </div>
+      <div id="input-section" class="flex justify-center mt-10">
+        <div class="rounded shadow p-4 mt-5">
+          <h3 class="text-2xl text-red-600">Deposer</h3>
+          <input type="number" id="deposit-input" placeholder="deposer" />
+          <br />
+          <button
+            class="rounded shadow bg-green-500 text-white"
+            id="deposit-btn"
+          >
+            Envoyer
+          </button>
+        </div>
+        <div class="rounded shadow p-4 mt-5 ml-5">
+          <h3 class="text-2xl text-red-600">Retirer</h3>
+          <input
+            type="number"
+            class="form-control"
+            id="withdraw-input"
+            placeholder="Retirer"
+          />
+          <br />
+          <button
+            class="rounded shadow bg-green-500 text-white"
+            id="withdraw-btn"
+          >
+            Envoyer
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
