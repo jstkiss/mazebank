@@ -5,27 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../../assets/css/output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title>Home</title>
+    <title>MazeBank</title>
   </head>
   <body class="bg-customblue">
-    <header class="grid grid-cols-3 grid-rows-2 h-32 bg-white">
-      <div class="flex items-center">
+    <header class="lg:grid lg:grid-cols-3 lg:grid-rows-2 h-32 bg-white">
+      <div class="lg:flex lg:items-center">
         <img
           class="w-auto h-auto"
           src="../../assets/img/téléchargement.png"
           alt="bank"
         />
       </div>
-      <div class="flex justify-start items-center text-black uppercase">
-        <div class="flex">
+      <div class="lg:flex lg:justify-start lg:items-center text-black uppercase">
+        <div class="lg:flex">
           <h3 class="pr-4">Vous êtes particulier</h3>
           <i class="fas fa-chevron-down pt-1 pr-4"></i>
           <input
-            class="border border-black pr-4 pl-4"
+            class="border border-black pr-4 lg:pl-4"
             type="text"
             placeholder="Rechercher ?"
           />
@@ -33,165 +29,213 @@
         </div>
       </div>
       <div
-        class="text-black justify-center flex items-center border-solid bg-green-300"
+        class="text-black lg:justify-center lg:flex items-center border-solid bg-green-300"
       >
-        <ul class="flex">
-          <li class="pl-4">
+        <ul class="lg:flex">
+          <li class="lg:pl-4">
             <i class="fas fa-comment-alt"></i>
             <a href="">Nous contacter</a>
           </li>
-          <li class="pl-4">
+          <li class="lg:pl-4">
             <a href="">Ouvrir un compte</a>
           </li>
-          <li class="pl-4">
+          <li class="lg:pl-4">
             <i class="fas fa-unlock-alt"></i>
             <a href="">Mon espace</a>
           </li>
         </ul>
       </div>
       <div
-        class="col-span-3 flex justify-center items-center w-full bg-gray-100"
+        class="col-span-3 lg:flex lg:justify-center items-center w-full bg-gray-100"
       >
         <nav class="text-black w-full">
-          <ul class="flex text-2xl justify-around">
+          <ul class="lg:flex text-2xl justify-around">
             <li>
               <a href="">Accueil</a>
             </li>
-            <li class="pl-4">
+            <li class="lg:pl-4">
               <a href="">Compte & Carte</a>
             </li>
-            <li class="pl-4">
+            <li class="lg:pl-4">
               <a href="">Emprunter</a>
             </li>
-            <li class="pl-4 text-green-300 font-bold">
+            <li class="lg:pl-4 text-green-300 font-bold">
               <a href="">Solde</a>
             </li>
-            <li class="pl-4">
+            <li class="lg:pl-4">
               <a href="">S'assurer</a>
             </li>
-            <li class="pl-4">
+            <li class="lg:pl-4">
               <a href="">Simulation</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="flex justify-center">
-      <form id="form" class="mt-5 text-white">
-        <label for="">Name:</label>
-        <input
-          class="border-2 border-black"
-          type="text"
-          name=""
-          id="name-input"
-          placeholder="your name:"
-        />
-        <label for="">Account:</label>
-        <input
-          class="border-2 border-black"
-          type="text"
-          name=""
-          id="account-input"
-          placeholder="your account:"
-        />
-        <label for="">Rib:</label>
-        <input
-          class="border-2 border-black"
-          type="text"
-          name=""
-          id="rib-input"
-          placeholder="your rib:"
-        />
-        <label for="">Sold:</label>
-        <input
-          class="border-2 border-black"
-          type="number"
-          name=""
-          id="sold-input"
-          placeholder="your sold:"
-        />
-        <div class="pt-2 flex justify-center">
-          <button
-            class="rounded shadow bg-btnbeige text-customblue"
-            id="submit-user"
-          >
-            Envoyer
-          </button>
-        </div>
-      </form>
-    </div>
-    <section
-      class="text-black border-solid bg-gray-100 w-40 flex justify-center"
-    >
-      <div class="p-4">
-        <h2>Compte de depôt</h2>
-        <p>€ <span id="balance">0</span></p>
+    <section class="lg:grid lg:grid-cols-2 h-full">
+      <div class="lg:flex lg:justify-center mt-16">
+        <form
+          id="form"
+          class="mt-5 text-black lg:flex lg:flex-col items-center lg:justify-center bg-gray-300 w-96 rounded-3xl"
+        >
+          <div class="lg:flex lg:flex-col items-center pt-4">
+            <label for="">Name:</label>
+            <input
+              class="border-black border-2 pr-4 lg:pl-4 text-center"
+              type="text"
+              name=""
+              id="name-input"
+              placeholder="NAME"
+            />
+          </div>
+          <div class="lg:flex lg:flex-col items-center pt-4">
+            <label for="">Account:</label>
+            <input
+              class="border-black border-2 pr-4 lg:pl-4 text-center"
+              type="text"
+              name=""
+              id="account-input"
+              placeholder="ACCOUNT"
+            />
+          </div>
+          <div class="lg:flex lg:flex-col items-center pt-4">
+            <label for="">Rib:</label>
+            <input
+              class="border-black border-2 pr-4 lg:pl-4 text-center"
+              type="text"
+              name=""
+              id="rib-input"
+              placeholder="RIB"
+            />
+          </div>
+          <div class="lg:flex lg:flex-col items-center pt-4">
+            <label for="">Sold:</label>
+            <input
+              class="border-black border-2 pr-4 lg:pl-4 text-center"
+              type="number"
+              name=""
+              id="sold-input"
+              placeholder="SOLD"
+            />
+          </div>
+          <div class="lg:flex lg:justify-center mt-10">
+            <button
+              class="shadow bg-green-300 text-black rounded w-80 h-12"
+              id="submit-user"
+            >
+              Envoyer
+            </button>
+          </div>
+        </form>
       </div>
+      <section class="col-span-1">
+        <div class="lg:flex lg:justify-center">
+          <!-- <h1 class="text-white">BONJOUR <span id="name"></span></h1> -->
+          <div class="text-black border-solid bg-gray-100 w-96 h-40 mt-10">
+            <div class="lg:grid lg:grid-cols-3 lg:grid-rows-2">
+              <div class="lg:flex lg:justify-center items-center bg-green-300">
+                <i class="fa-brands fa-paypal fa-2xl"></i>
+              </div>
+              <div class="p-4 bg-green-300">
+                <h1 class="text-1xl">Compte de depôt</h1>
+              </div>
+              <div
+                class="lg:flex lg:justify-center items-center text-2xl bg-green-300"
+              >
+                <p>€ <span id="balance">0</span></p>
+              </div>
+              <div class="bg-gray-300 lg:flex lg:justify-center items-center">
+                <h1 class="text-1xl">Dernières opérations</h1>
+              </div>
+              <div class="col-span-2">
+                <p>
+                  27/09 virement en votre faveur
+                  <span class="font-bold">50€</span>
+                </p>
+                <p>
+                  27/09 virement en votre faveur
+                  <span class="font-bold">50€</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="lg:flex lg:justify-center">
+          <div class="mr-5">
+            <div class="lg:flex lg:justify-center">
+              <div
+                class="p-4 rounded text-black border-solid bg-gray-100 w-96 h-24 mt-10"
+              >
+                <div class="lg:grid lg:grid-cols-2 lg:grid-rows-2">
+                  <div class="lg:flex text-2xl">
+                    <h2>EUR</h2>
+                    <i class="fas fa-chevron-down pt-1 lg:pl-4"></i>
+                  </div>
+                  <div class="lg:flex lg:justify-center text-2xl">
+                    <p>€ <span id="deposit">0</span></p>
+                  </div>
+                  <div class="col-span-3 lg:lg:flex lg:lg:justify-center pt-2">
+                    <input
+                      class="border-black border-2 pr-4 lg:pl-4 text-center"
+                      type="number"
+                      id="deposit-input"
+                      placeholder="DEPOSER"
+                    />
+                  </div>
+                </div>
+                <div class="rounded shadow p-4 lg:flex lg:justify-center">
+                  <button
+                    class="shadow bg-green-300 text-black rounded w-80 h-12"
+                    id="deposit-btn"
+                  >
+                    Ajouter de l'argent en toute sécurité
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-5">
+            <div class="lg:flex lg:justify-center">
+              <div
+                class="p-4 rounded text-black border-solid bg-gray-100 w-96 h-24 mt-10"
+              >
+                <div class="lg:grid lg:grid-cols-2 lg:grid-rows-2">
+                  <div class="lg:flex text-2xl">
+                    <h2>-EUR</h2>
+                    <i class="fas fa-chevron-down pt-1 lg:pl-4"></i>
+                  </div>
+                  <div class="lg:flex lg:justify-center text-2xl">
+                    <p>€ <span id="withdraw">0</span></p>
+                  </div>
+                  <div class="col-span-3 lg:flex lg:justify-center pt-2">
+                    <input
+                      type="number"
+                      class="border-black border-2 pr-4 lg:pl-4 text-center"
+                      id="withdraw-input"
+                      placeholder="RETIRER"
+                    />
+                  </div>
+                </div>
+                <div class="rounded shadow p-4 lg:flex lg:justify-center">
+                  <button
+                    class="shadow bg-green-300 text-black rounded w-80 h-12"
+                    id="withdraw-btn"
+                  >
+                    Retirer de l'argent en toute sécurité
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </section>
-    <!-- <section class="flex">
-    <div class="text-black">
-      <h1>Compte Dépot</h1>
-      <br />
-      <h2>Mon Nom: <span id="name"></span></h2>
-      <br />
-      <h2>N* de compte: <span id="account"></span></h2>
-      <br />
-      <h2>Mon RIB: <span id="rib"></span></h2>
-      <br />
-      <h2>Mon Sold: <span id="sold"></span></h2>
-    </div>
-  </section> -->
-    <div class="mt-20">
-      <div class="flex justify-center">
-        <div class="p-4 rounded border-solid bg-blue-500">
-          <h2>Deposit</h2>
-          <p>€ <span id="deposit">0</span></p>
-        </div>
-        <div class="p-4 rounded border-solid bg-white">
-          <h2>Withdraw</h2>
-          <p>€ <span id="withdraw">0</span></p>
-        </div>
-        <div class="p-4 rounded border-solid bg-red-500">
-          <h2>Solde</h2>
-          <p>€ <span id="balance">0</span></p>
-        </div>
-      </div>
-      <div id="input-section" class="flex justify-center mt-10">
-        <div class="rounded shadow p-4 mt-5">
-          <h3 class="text-2xl text-red-600">Deposer</h3>
-          <input type="number" id="deposit-input" placeholder="deposer" />
-          <br />
-          <button
-            class="rounded shadow bg-green-500 text-white"
-            id="deposit-btn"
-          >
-            Envoyer
-          </button>
-        </div>
-        <div class="rounded shadow p-4 mt-5 ml-5">
-          <h3 class="text-2xl text-red-600">Retirer</h3>
-          <input
-            type="number"
-            class="form-control"
-            id="withdraw-input"
-            placeholder="Retirer"
-          />
-          <br />
-          <button
-            class="rounded shadow bg-green-500 text-white"
-            id="withdraw-btn"
-          >
-            Envoyer
-          </button>
-        </div>
-      </div>
-    </div>
     <footer
-      class="w-full bg-gray-100 pt-10 text-black bottom-0 left-0 right-0 absolute grid grid-cols-4"
+      class="w-full bg-gray-100 pt-10 text-black bottom-0 left-0 right-0 absolute lg:grid lg:grid-cols-4"
     >
       <div>
-        <h1 class="text-2xl flex justify-center font-bold">Maze Bank</h1>
-        <nav class="flex justify-center">
+        <h1 class="text-2xl lg:flex lg:justify-center font-bold">Maze Bank</h1>
+        <nav class="lg:flex lg:justify-center">
           <ul>
             <li><a href="">Accueil</a></li>
             <li><a href="">Compte & Carte</a></li>
@@ -202,10 +246,10 @@
         </nav>
       </div>
       <div>
-        <h1 class="text-2xl flex justify-center font-bold">
-          Relation clien banque
+        <h1 class="text-2xl lg:flex lg:justify-center font-bold">
+          Relation client banque
         </h1>
-        <nav class="flex justify-center">
+        <nav class="lg:flex lg:justify-center">
           <ul>
             <li><a href="">Tarifs</a></li>
             <li><a href="">Réclamation et médiation</a></li>
@@ -215,21 +259,21 @@
         </nav>
       </div>
       <div>
-        <h1 class="text-2xl flex justify-center font-bold">Nos réseaux</h1>
-        <a class="flex justify-center pt-4" href=""
+        <h1 class="text-2xl lg:flex lg:justify-center font-bold">Nos réseaux</h1>
+        <a class="lg:flex lg:justify-center pt-4" href=""
           ><i class="fab fa-youtube" target="_blank"></i
         ></a>
-        <a class="flex justify-center pt-4" href=""
+        <a class="lg:flex lg:justify-center pt-4" href=""
           ><i class="fab fa-twitter" target="_blank"></i
         ></a>
-        <a class="flex justify-center pt-4" href=""
+        <a class="lg:flex lg:justify-center pt-4" href=""
           ><i class="fab fa-discord" target="_blank"></i
         ></a>
-        <a class="flex justify-center pt-4" href=""
+        <a class="lg:flex lg:justify-center pt-4" href=""
           ><i class="fab fa-twitch" target="_blank"></i
         ></a>
       </div>
-      <div class="flex justify-center">
+      <div class="lg:flex lg:justify-center">
         <img
           class="w-36 h-32"
           src="../../assets/img/emblem_512.png"

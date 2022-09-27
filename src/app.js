@@ -1,3 +1,5 @@
+import "@fortawesome/fontawesome-free/js/all"
+
 const deposit = document.getElementById("deposit")
 
 const withdraw = document.getElementById("withdraw")
