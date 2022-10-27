@@ -7,7 +7,7 @@
     <link href="../../assets/css/output.css" rel="stylesheet" />
     <title>MazeBank</title>
   </head>
-  <body class="bg-crimson">
+  <body class="bg-white">
     <header class="lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:h-32 bg-white">
       <div class="flex items-center">
         <img
@@ -16,9 +16,7 @@
           alt="bank"
         />
       </div>
-      <div
-        class="lg:flex lg:justify-start lg:items-center text-black uppercase"
-      >
+      <div class="lg:flex lg:justify-start lg:items-center text-black uppercase">
         <div class="flex pt-2">
           <h3 class="lg:pr-4">Vous êtes particulier</h3>
           <i class="fas fa-chevron-down pt-1 pr-4 pl-2"></i>
@@ -72,7 +70,7 @@
       <div class="flex justify-center mt-16">
         <form
           id="form"
-          class="mt-5 text-black flex flex-col items-center justify-center bg-gray-300 lg:w-96 rounded-3xl"
+          class="mt-5 text-black flex flex-col items-center justify-center bg-gray-100 lg:w-96 rounded-3xl"
         >
           <div class="flex flex-col items-center pt-4">
             <label for="">Name:</label>
@@ -126,11 +124,11 @@
       </div>
       <section class="lg:col-span-1 mt-10">
         <div class="flex justify-center">
-          <div class="text-black border-solid bg-gray-100 lg:w-96 lg:h-40 lg:mt-10 w-72">
+          <div
+            class="text-black border-solid bg-gray-100 lg:w-96 lg:h-40 lg:mt-10 w-72"
+          >
             <div class="grid grid-cols-3 grid-rows-2">
-              <div
-                class="flex justify-center items-center bg-green-300"
-              >
+              <div class="flex justify-center items-center bg-green-300">
                 <i class="fa-brands fa-paypal fa-2xl"></i>
               </div>
               <div class="lg:p-4 bg-green-300 flex justify-center items-center">
@@ -182,9 +180,9 @@
                     />
                   </div>
                 </div>
-                <div class="rounded shadow lg:p-4 flex justify-center">
+                <div class="rounded  lg:p-4 flex justify-center">
                   <button
-                    class="shadow bg-green-300 text-black rounded lg:w-80 lg:h-12"
+                    class=" bg-green-300 text-black rounded lg:w-80 lg:h-12"
                     id="deposit-btn"
                   >
                     Ajouter de l'argent en toute sécurité
@@ -215,9 +213,9 @@
                     />
                   </div>
                 </div>
-                <div class="rounded shadow lg:p-4 flex justify-center">
+                <div class="rounded  lg:p-4 flex justify-center">
                   <button
-                    class="shadow bg-green-300 text-black rounded lg:w-80 lg:h-12"
+                    class=" bg-green-300 text-black rounded lg:w-80 lg:h-12"
                     id="withdraw-btn"
                   >
                     Retirer de l'argent en toute sécurité
@@ -230,7 +228,7 @@
       </section>
     </section>
     <footer
-      class=" bg-gray-100 lg:pt-10 pl-6 text-black lg:bottom-0 lg:left-0 lg:right-0 lg:absolute grid lg:grid-cols-4 grid-rows-4 lg:grid-rows-none"
+      class="bg-gray-100 lg:pt-10 pl-6 text-black lg:bottom-0 lg:left-0 lg:right-0 lg:absolute grid lg:grid-cols-4 grid-rows-4 lg:grid-rows-none"
     >
       <div>
         <h1 class="text-2xl lg:flex lg:justify-center font-bold">Maze Bank</h1>
@@ -260,18 +258,20 @@
         <h1 class="text-2xl lg:flex lg:justify-center font-bold">
           Nos réseaux
         </h1>
-        <a class="lg:flex lg:justify-center lg:pt-4" href=""
-          ><i class="fab fa-youtube" target="_blank"></i
-        ></a>
-        <a class="lg:flex lg:justify-center lg:pt-4" href=""
-          ><i class="fab fa-twitter" target="_blank"></i
-        ></a>
-        <a class="lg:flex lg:justify-center lg:pt-4" href=""
-          ><i class="fab fa-discord" target="_blank"></i
-        ></a>
-        <a class="lg:flex lg:justify-center lg:pt-4" href=""
-          ><i class="fab fa-twitch" target="_blank"></i
-        ></a>
+        <div class="lg:flex lg:justify-center">
+          <a class="lg:pt-4" href=""
+            ><i class="fab fa-youtube" target="_blank"></i
+          ></a>
+          <a class="lg:pt-4 lg:pl-4" href=""
+            ><i class="fab fa-twitter" target="_blank"></i
+          ></a>
+          <a class="lg:pt-4 lg:pl-4" href=""
+            ><i class="fab fa-discord" target="_blank"></i
+          ></a>
+          <a class="lg:pt-4 lg:pl-4" href=""
+            ><i class="fab fa-twitch" target="_blank"></i
+          ></a>
+        </div>
       </div>
       <div class="flex justify-center items-center">
         <img
